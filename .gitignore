@@ -1,0 +1,16 @@
+*.pyc
+*.swp
+*.egg-info
+build
+dist
+.coverage
+cover
+*.egg
+.tox/
+*.h5
+*.csv
+*.pickle
+*.cfg
+*.ini
+*.yml
+*.h5

@@ -1,0 +1,6 @@
+*.h5
+*.csv
+*.pickle
+*.cfg
+*.ini
+*.yml
