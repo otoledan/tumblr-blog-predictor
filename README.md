@@ -7,6 +7,7 @@ These python programs use the text descriptions from previous posts on any tumbl
 
 ### Prerequisites 
 Install Keras (https://keras.io/#installation)
+
 Install Tensorflow (https://www.tensorflow.org/install/)
 
 ### Get the Tumblr Authorization Keys
