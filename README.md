@@ -1,4 +1,4 @@
-#Tumblr Blog Predictor
+# Tumblr Blog Predictor
 
 ## Description
 These python programs use the text descriptions from previous posts on any tumblr blog and predict which posts on their dashboard will be reblogged. 
