@@ -260,7 +260,7 @@ def most_notes(client, name):
 
 
 def reblog_prediction(client):
-    id=177026753294
+    id=#enter id number to start from on dashboard
     x = client.dashboard(reblog_info=True, since_id=id)[u'posts']
     #load our saved model
     model = load_model('my_model.h5')
@@ -304,7 +304,7 @@ if __name__ == "__main__":
     )
 
     if (len(sys.argv) == 3):
-        if (sys.argv[1] == "get_blogs")
+        if (sys.argv[1] == "get_data")
             name = sys.argv[2]
 
             on_blog = get_all_posts(client, name)
