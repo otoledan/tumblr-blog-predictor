@@ -115,7 +115,7 @@ def right_all(client, on_blog, name):
         w.writerows(on_blog.values())
 
 def reblog_all(client, on_blog, name):
-    id = #enter id number of post you want to start reblogging from
+    #id = enter id number of post you want to start reblogging from
     length = 20
     dict_of_posts = dict()
     count = 1
@@ -259,8 +259,8 @@ def most_notes(client, name):
     return dict_of_posts
 
 
-def reblog_prediction(client):
-    id=#enter id number to start from on dashboard
+def reblog_prediction(client, id_num):
+    id = int(id_num) #enter id number to start from on dashboard
     x = client.dashboard(reblog_info=True, since_id=id)[u'posts']
     #load our saved model
     model = load_model('my_model.h5')
@@ -295,28 +295,24 @@ def reblog_prediction(client):
 
 if __name__ == "__main__":
     #paste the API tokens from tumblr OAuth
-
     client = pytumblr.TumblrRestClient(
-      #Add tumblr API token codes
-      #
-      #
-      #
+         #Add tumblr API token codes
     )
 
     if (len(sys.argv) == 3):
-        if (sys.argv[1] == "get_data")
+        if (sys.argv[1] == "get_data"):
             name = sys.argv[2]
 
             on_blog = get_all_posts(client, name)
             right_all(client, on_blog, name)
 
         if (sys.argv[1] == "prediction"):
-            name = sys.argv[2]
-            reblog_prediction(client)
+            id = sys.argv[2]
+            reblog_prediction(client, id)
 
         else:
             print("Please enter either get_blogs or prediction as the 1st argument")
-            print("Please enter a blog name as the 2nd argument")
+            print("Please enter a blog name or id respectively")
 
             #on_blog = get_dict()
             #most_notes(client, name)
